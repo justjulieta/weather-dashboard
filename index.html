@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>My Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid text-black p-3 mb-2" id="header-color">
+        <div class="container text-center">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <main class="row no-gutters">
+        <aside class="card w-25">
+            <div>
+                <div class="card-body bg-light">
+                    <h5 class="card-title">Search your City:</h5>
+                    <form id="search-city" class="form-inline">
+                        <div class="input-group">
+                            <div class="form-outline">
+                                <input id="search-input" type="search" class="form-control mr-0 pr-0"><button
+                                    id="search-button" type="submit" class="btn btn-primary ml-0"><i
+                                        class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <ul class="list-group " id="searchListResults">
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="w-75 px-3 no-gutters">
+            <div class=container>
+                <div class="card border-dark mb-3">
+                    <div class="card-header font-weight-bold">
+                        <h3 id="currentCityName"></h3>
+                        <span id="day-0-date"></span>
+                        <img id="day-0-icon" src="">
+                    </div>
+                    <div class="card-body text-dark">
+                        <p class="card-text">Temperature: <span id="day-0-temp"></span></p>
+                        <p class="card-text">Humidity: <span id="day-0-hum"></span></p>
+                        <p class="card-text">Wind Speed: <span id="day-0-wind"></span></p>
+                        <p class="card-text">UV Index: <span id="day-0-UV"></span></p>
+                    </div>
+                </div>
+                            <div class="card">
+                                <div class="row p-3 col-9" id="fiveDayForecast">
+                                    <h3 class="mb-3 p-3">5-Day Forecast:</h3>
+                                </div>
+                                <div class="p-3 col-9">
+                                    <section class="container my-5 p-3">
+                                        <div class="row" id="fiveDayForecast">
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Designed By:</h3>
+            <p><a href="http://github.com/imjustSahen" target="_blank" rel="noopener noreferrer">imjustSahen</a></p>
+    </footer>
+</body>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script defer src="/assets/js/script.js"></script>
+
+</html>
