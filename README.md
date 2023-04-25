@@ -15,3 +15,11 @@ When they view future weather conditions for that city, they are then presented 
 ## Usage
 
 This webpage will show weather data for different cities.
+
+## Questions?
+
+Created by: Julieta RSN
+
+GitHub: https://www.github.com/justjulieta
+
+Email: julieta.ramirez27@gmail.com
