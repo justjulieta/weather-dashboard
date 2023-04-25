@@ -9,7 +9,7 @@ searchButton.addEventListener("click", () => {
 });
 
 function fetchWeatherData(city) {
-    const apiKey = "6cfcd046bcdbf5f166a9d037293881fc";
+    const apiKey = "d593c9003673ebe0a9942c204c0ce980";
     const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
     
     fetch(weatherUrl)
